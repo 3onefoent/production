@@ -142,15 +142,15 @@ export default function Home() {
 
       {/* Bottom row */}
       <div
-        className={`fixed bottom-12 left-0 right-0 px-10 flex items-end justify-between z-20 transition-all duration-1000 delay-300 ${
+        className={`fixed bottom-6 md:bottom-12 left-0 right-0 px-6 md:px-10 flex flex-col md:flex-row items-center md:items-end justify-between gap-4 md:gap-0 z-20 transition-all duration-1000 delay-300 ${
           mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
         }`}
       >
-        <p className="text-sm font-body font-light text-white/75 max-w-[220px] leading-relaxed">
+        <p className="text-sm font-body font-light text-white/75 max-w-[220px] leading-relaxed text-center md:text-left order-2 md:order-1">
           Anyone can shoot visuals.
         </p>
 
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-0 flex items-center gap-3">
+        <div className="static md:absolute md:left-1/2 md:-translate-x-1/2 bottom-0 flex items-center gap-3 order-1 md:order-2">
           <button
             onClick={() => navigate('/contact')}
             className="group relative bg-white text-black text-sm font-body font-medium rounded px-6 py-3 overflow-hidden active:scale-[0.97] transition-all duration-200 shadow-[0_0_0_0_rgba(255,255,255,0)] hover:shadow-[0_0_24px_4px_rgba(255,255,255,0.25)] hover:scale-[1.03]"
@@ -160,7 +160,7 @@ export default function Home() {
           </button>
         </div>
 
-        <p className="text-sm font-body font-light text-white/75 max-w-[220px] leading-relaxed text-right">
+        <p className="text-sm font-body font-light text-white/75 max-w-[220px] leading-relaxed text-center md:text-right order-3">
           Not just anyone can market visuals.
         </p>
       </div>
