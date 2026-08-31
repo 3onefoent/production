@@ -4,10 +4,9 @@ import flyer from '../assets/tickets/the-show-flyer.png';
 // Swap this in once a Stripe Payment Link (or similar checkout URL) exists.
 const TICKET_PURCHASE_URL = '';
 
-// Total tickets available for this show. The hard cap on sales is enforced
-// on the Stripe Payment Link itself ("Limit the number of payments"), not
-// here — this just drives the copy on the page.
-const TICKET_CAPACITY = 60;
+// Capacity is 60 tickets, enforced on the Stripe Payment Link itself
+// ("Limit the number of payments") once it's created — deliberately not
+// shown on the page.
 
 const FALLBACK_URL =
   'mailto:home@314ent.net?subject=' + encodeURIComponent('Ticket reservation: The Show');
@@ -35,8 +34,7 @@ export default function ShowTickets() {
         <p className="text-white/50 text-sm mb-4">Doors 8:00pm · Show 8:30pm</p>
         <p className="text-white/50 text-sm mb-8">El-Train, 4Deep, 3reofum &amp; special guests</p>
 
-        <p className="text-4xl font-heading italic mb-2">$30</p>
-        <p className="text-white/40 text-xs mb-6">Only {TICKET_CAPACITY} tickets available</p>
+        <p className="text-4xl font-heading italic mb-6">$30</p>
 
         <a
           href={purchaseUrl}
