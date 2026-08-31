@@ -7,6 +7,7 @@ import Partners from './pages/Partners';
 import Projects from './pages/Projects';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
+import ShowTickets from './pages/ShowTickets';
 
 function Routes() {
   const { path } = useRouter();
@@ -24,6 +25,8 @@ function Routes() {
       return <Pricing />;
     case '/contact':
       return <Contact />;
+    case '/show-tickets':
+      return <ShowTickets />;
     default:
       return <Home />;
   }

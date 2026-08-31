@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: 'Our Mission', path: '/our-mission' },
   { label: 'Partners', path: '/partners' },
   { label: 'Pricing', path: '/pricing' },
+  { label: 'Show Tickets', path: '/show-tickets' },
 ];
 
 export function Nav() {
