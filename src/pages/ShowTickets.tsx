@@ -1,8 +1,7 @@
 import { PageShell } from '../components/PageShell';
 import flyer from '../assets/tickets/the-show-flyer.png';
 
-// Swap this in once a Stripe Payment Link (or similar checkout URL) exists.
-const TICKET_PURCHASE_URL = '';
+const TICKET_PURCHASE_URL = 'https://buy.stripe.com/bJedRa4vj8kK99v9Ic5gc00';
 
 // Capacity is 60 tickets, enforced on the Stripe Payment Link itself
 // ("Limit the number of payments") once it's created — deliberately not
