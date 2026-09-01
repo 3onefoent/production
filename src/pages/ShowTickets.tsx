@@ -31,7 +31,9 @@ export default function ShowTickets() {
         <p className="text-white/70 mb-1">Saturday, September 26, 2026</p>
         <p className="text-white/70 mb-1">Shock City Studios — St. Louis</p>
         <p className="text-white/50 text-sm mb-4">Doors 8:00pm · Show 8:30pm</p>
-        <p className="text-white/50 text-sm mb-8">El-Train, 4Deep, 3reofum &amp; special guests</p>
+        <p className="text-white/50 text-sm mb-8">
+          El-Train, Soufside Jerei, 4Deep, 3reofum &amp; special guests
+        </p>
 
         <p className="text-4xl font-heading italic mb-6">$30</p>
 
