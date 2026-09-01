@@ -10,6 +10,7 @@ import madeInAmericaLight from '../assets/partners/made-in-america-light.jpeg';
 import gatheringForJustice from '../assets/partners/gathering-for-justice.jpeg';
 import eltenLatham from '../assets/partners/elten-latham.png';
 import zf from '../assets/partners/zf-logo.png';
+import boydMedia from '../assets/partners/boyd-media.png';
 
 const PARTNERS = [
   { name: 'SXSW', logo: sxsw },
@@ -21,6 +22,7 @@ const PARTNERS = [
   { name: 'The FADER', logo: fader },
   { name: 'ZF', logo: zf },
   { name: 'Elten Latham Photography', logo: eltenLatham },
+  { name: 'Boyd Media', logo: boydMedia, light: true },
 ];
 
 const CARD_WIDTH = 380;
@@ -70,13 +72,19 @@ export default function Partners() {
                 className="liquid-glass shrink-0 h-64 rounded-2xl flex items-center justify-center p-10"
                 style={{ width: CARD_WIDTH }}
               >
-                <img
-                  src={p.logo}
-                  alt={p.name}
-                  className="max-h-full max-w-full object-contain rounded-md"
-                  draggable={false}
-                  onContextMenu={(e) => e.preventDefault()}
-                />
+                <div
+                  className={
+                    p.light ? 'bg-white rounded-2xl px-8 py-6 flex items-center justify-center' : ''
+                  }
+                >
+                  <img
+                    src={p.logo}
+                    alt={p.name}
+                    className="max-h-full max-w-full object-contain rounded-md"
+                    draggable={false}
+                    onContextMenu={(e) => e.preventDefault()}
+                  />
+                </div>
               </div>
             ))}
           </div>
