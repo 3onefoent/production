@@ -27,6 +27,9 @@ export default function ShowTickets() {
           />
         </div>
 
+        <p className="text-lg font-body font-medium mb-1">There will be FREE NICKY SLICES</p>
+        <p className="text-white/50 text-xs mb-8">while supplies last</p>
+
         <h2 className="font-heading italic text-3xl mb-2">The Show</h2>
         <p className="text-white/70 mb-1">Saturday, September 26, 2026</p>
         <p className="text-white/70 mb-1">Shock City Studios — St. Louis</p>
