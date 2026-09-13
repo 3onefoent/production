@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Nav } from './components/Nav';
 import { RouterProvider, useRouter } from './lib/router';
 import Home from './pages/Home';
@@ -37,6 +38,7 @@ function App() {
     <RouterProvider>
       <Nav />
       <Routes />
+      <Analytics />
     </RouterProvider>
   );
 }
