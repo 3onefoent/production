@@ -17,7 +17,7 @@ export default function ShowTickets() {
   return (
     <PageShell eyebrow="Live show" title="Show Tickets" centered>
       <div className="max-w-md mx-auto">
-        <div className="project-glow liquid-glass rounded-2xl overflow-hidden mb-8">
+        <div className="relative project-glow liquid-glass rounded-2xl overflow-hidden mb-8">
           <img
             src={flyer}
             alt="The Show — September 26, Shock City Studios"
@@ -25,6 +25,11 @@ export default function ShowTickets() {
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
           />
+          <div className="absolute -top-2 -right-2 rotate-12 rounded-full bg-yellow-400 text-black text-center shadow-lg w-28 h-28 flex flex-col items-center justify-center leading-none border-4 border-black">
+            <span className="text-[10px] font-body font-bold uppercase tracking-wide">On Sale</span>
+            <span className="text-2xl font-heading italic">$20</span>
+            <span className="text-[10px] font-body font-bold uppercase tracking-wide">at the door</span>
+          </div>
         </div>
 
         <p className="text-lg font-body font-medium mb-1">There will be FREE NICKY SLICES</p>
