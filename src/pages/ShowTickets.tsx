@@ -1,19 +1,7 @@
 import { PageShell } from '../components/PageShell';
 import flyer from '../assets/tickets/the-show-flyer.png';
 
-const TICKET_PURCHASE_URL = 'https://buy.stripe.com/bJedRa4vj8kK99v9Ic5gc00';
-
-// Capacity is 60 tickets, enforced on the Stripe Payment Link itself
-// ("Limit the number of payments") once it's created — deliberately not
-// shown on the page.
-
-const FALLBACK_URL =
-  'mailto:home@314ent.net?subject=' + encodeURIComponent('Ticket reservation: The Show');
-
 export default function ShowTickets() {
-  const purchaseUrl = TICKET_PURCHASE_URL || FALLBACK_URL;
-  const buttonLabel = TICKET_PURCHASE_URL ? 'Buy Tickets — $30' : 'Reserve Your Spot';
-
   return (
     <PageShell eyebrow="Live show" title="Show Tickets" centered>
       <div className="max-w-md mx-auto">
@@ -38,23 +26,7 @@ export default function ShowTickets() {
           El-Train, Soufside Jerei, 4Deep, 3reofum &amp; special guests
         </p>
 
-        <div className="flex items-center justify-center gap-4 mb-6">
-          <p className="text-4xl font-heading italic">$30</p>
-          <div className="-rotate-6 rounded-full bg-yellow-400 text-black text-center shadow-lg w-24 h-24 flex flex-col items-center justify-center leading-none border-4 border-black shrink-0">
-            <span className="text-[9px] font-body font-bold uppercase tracking-wide">On Sale</span>
-            <span className="text-xl font-heading italic">$20</span>
-            <span className="text-[9px] font-body font-bold uppercase tracking-wide">at the door</span>
-          </div>
-        </div>
-
-        <a
-          href={purchaseUrl}
-          target={TICKET_PURCHASE_URL ? '_blank' : undefined}
-          rel={TICKET_PURCHASE_URL ? 'noopener noreferrer' : undefined}
-          className="inline-block rounded bg-white text-black text-sm font-body font-medium px-6 py-3 text-center transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
-        >
-          {buttonLabel}
-        </a>
+        <p className="font-heading italic text-4xl md:text-5xl">Thank you for coming!</p>
       </div>
     </PageShell>
   );
