@@ -1,5 +1,7 @@
 import { PageShell } from '../components/PageShell';
-import flyer from '../assets/tickets/the-show-flyer.png';
+import flyer from '../assets/tickets/ethos-flyer.webp';
+
+const RSVP_URL = 'https://posh.vip/g/3onefoent';
 
 export default function ShowTickets() {
   return (
@@ -8,25 +10,33 @@ export default function ShowTickets() {
         <div className="project-glow liquid-glass rounded-2xl overflow-hidden mb-8">
           <img
             src={flyer}
-            alt="The Show — September 26, Shock City Studios"
+            alt="ETHOS — I met tour — Saint Louis, October 10, 2026"
             className="w-full h-auto"
             draggable={false}
             onContextMenu={(e) => e.preventDefault()}
           />
         </div>
 
-        <p className="text-lg font-body font-medium mb-1">There will be FREE NICKY SLICES</p>
-        <p className="text-white/50 text-xs mb-8">while supplies last</p>
+        <h2 className="font-heading italic text-3xl mb-2">ETHOS</h2>
+        <p className="text-white/70 mb-1">I met tour</p>
+        <p className="text-white/70 mb-1">Saturday, October 10, 2026</p>
+        <p className="text-white/70 mb-8">Saint Louis, USA</p>
 
-        <h2 className="font-heading italic text-3xl mb-2">The Show</h2>
-        <p className="text-white/70 mb-1">Saturday, September 26, 2026</p>
-        <p className="text-white/70 mb-1">Shock City Studios — St. Louis</p>
-        <p className="text-white/50 text-sm mb-4">Doors 8:00pm · Show 8:30pm</p>
-        <p className="text-white/50 text-sm mb-8">
-          El-Train, Soufside Jerei, 4Deep, 3reofum &amp; special guests
+        <p className="font-body font-extrabold uppercase text-6xl md:text-7xl leading-none tracking-tight text-yellow-400 mb-2">
+          Free
+        </p>
+        <p className="font-body font-bold uppercase text-lg tracking-[0.2em] mb-8">
+          This event is free
         </p>
 
-        <p className="font-heading italic text-4xl md:text-5xl">Thank you for coming!</p>
+        <a
+          href={RSVP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block rounded bg-white text-black text-base font-body font-bold uppercase tracking-wide px-10 py-4 text-center transition-all duration-200 hover:scale-[1.03] active:scale-[0.97]"
+        >
+          RSVP
+        </a>
       </div>
     </PageShell>
   );
