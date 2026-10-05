@@ -18,7 +18,7 @@ export default function ShowTickets() {
         </div>
 
         <h2 className="font-heading italic text-3xl mb-2">ETHOS</h2>
-        <p className="text-white/70 mb-1">I met tour</p>
+        <p className="text-white/70 mb-1">Listening party</p>
         <p className="text-white/70 mb-1">Saturday, October 10, 2026</p>
         <p className="text-white/70 mb-8">Saint Louis, USA</p>
 
@@ -26,7 +26,7 @@ export default function ShowTickets() {
           Free
         </p>
         <p className="font-body font-bold uppercase text-lg tracking-[0.2em] mb-8">
-          This event is free
+          Event
         </p>
 
         <a
@@ -37,6 +37,19 @@ export default function ShowTickets() {
         >
           RSVP
         </a>
+
+        <div className="mt-14 flex items-center gap-4" aria-hidden="true">
+          <span className="h-px flex-1 bg-white/20" />
+          <span className="text-white/40 text-xs">&#10022;</span>
+          <span className="h-px flex-1 bg-white/20" />
+        </div>
+
+        <p className="mt-8 font-heading italic text-4xl md:text-5xl">8PM – 10PM</p>
+        <p className="mt-4 text-yellow-400 text-base font-bold uppercase tracking-[0.3em]">Free</p>
+        <p className="mt-1 text-white/60 text-sm uppercase tracking-[0.2em]">
+          Beverages &amp; light snacks
+        </p>
+        <p className="mt-1 text-white/40 text-xs uppercase tracking-[0.2em]">while supplies last</p>
       </div>
     </PageShell>
   );
