@@ -5,7 +5,7 @@ const RSVP_URL = 'https://posh.vip/g/3onefoent';
 
 export default function ShowTickets() {
   return (
-    <PageShell eyebrow="Live show" title="Show Tickets" centered>
+    <PageShell eyebrow="Live show" title="Events" centered>
       <div className="max-w-md mx-auto">
         <div className="project-glow liquid-glass rounded-2xl overflow-hidden mb-8">
           <img
